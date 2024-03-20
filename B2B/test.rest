@@ -1,0 +1,18 @@
+post http://localhost:5000/api/v1/register
+content-type: application/json
+
+{
+    "name":"almas",
+    "email":"almasmon@gmail.com",
+    "password":"Almas@123"
+}
+
+###
+
+get http://localhost:5000/api/v1/user
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTU3ZmM4MmU1Y2IzNDUwMjQ2NDUwNyIsImlhdCI6MTcwOTUzOTI3MywiZXhwIjoxNzA5NTc1MjczfQ._cZ_ccVqb0wsczLT30Y1r5QxtKotos7JeqvD6bB03Q8
+
+###
+
+post http://localhost:5000/api/v1/add-new
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZTU3ZmM4MmU1Y2IzNDUwMjQ2NDUwNyIsImlhdCI6MTcwOTUzOTI3MywiZXhwIjoxNzA5NTc1MjczfQ._cZ_ccVqb0wsczLT30Y1r5QxtKotos7JeqvD6bB03Q8

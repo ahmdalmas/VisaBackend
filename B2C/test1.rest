@@ -1,0 +1,43 @@
+
+get http://192.168.0.103:5000/api/visa/
+
+
+###
+
+post http://192.168.0.103:5000/api/visa/add-new
+Content-Type: application/json
+
+
+{
+    "country_image": "asd",
+    "country_name": "asd",
+    "expected_on": 60,
+    "visa_fees": 3123,
+    "platform_fees": 123123,
+    "validity": 60,
+    "entry_type": "dasd",
+    "document_required": "ub"
+}
+
+
+###
+
+PATCH http://192.168.0.103:5000/api/visa/65f437705c7110ad32b360b8
+Content-Type: application/json
+
+{
+    "visa_fees": 123
+}
+
+###
+
+DELETE http://192.168.0.103:5000/api/visa/65f589211536b44def40332d
+
+
+###
+
+
+DELETE http://192.168.0.103:5000/api/visa/
+
+
+###
